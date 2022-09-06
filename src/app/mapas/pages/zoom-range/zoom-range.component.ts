@@ -35,6 +35,7 @@ export class ZoomRangeComponent implements AfterViewInit, OnDestroy {
     this.mapa.off('zoomend', () => {});
     this.mapa.off('move', () => {});
   }
+
   ngAfterViewInit(): void {
     this.mapa = new mapboxgl.Map({
       container: this.divMapa.nativeElement,
